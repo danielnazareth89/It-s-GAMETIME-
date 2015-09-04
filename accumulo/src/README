@@ -1,0 +1,17 @@
+CSE 587 Project 5 Accumulo By Daniel Frederick Nazareth
+UBITName:dnazaret
+UB#:50134215
+Email:dnazaret@buffalo.edu
+
+Instructions for Checking Submission and Using accumulo_script.sh
+
+1) Ensure the update_script.sh given to the students to start up accumulo/hadoop/ZooKeeper in the VM HAS BEEN RUN ALREADY
+
+2)Once verified that Accumulo,Zookeeper,Hadoop is running, run the accumulo script in this directory using command ./accumulo_script.sh
+
+3) The script will use the csv files in directories East and West to check tweets and count win/lose. You can replace given data with your own correctly formatted csv files if desired.
+
+4) Once script finishes running, you can scan tables result_east and result_west to view tweet counts for win and loss.These results have also been aggregated and summarised in the report submitted
+To check result_east you must login as user east with password 123456 and for west username west and password 123456
+
+5)The folder NBACount contains the Mapreduce WordCount jar used to check for win and lose words. It is run from within accumulo_script.sh itself and does not need to be touched.
